@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(../img/login/loginbackground.jpg);
+            background-size: cover;
+            /* 让背景图基于容器大小伸缩 */
+            background-attachment: fixed;
+            background-color: #CCCCCC;
+        }
+
+        .card {
+            width: 450px;
+            height: 500px;
+            border-radius: 20px;
+            background: #0eac6227;
+            position: relative;
+            border: 2px solid #7eff055e;
+            transition: 0.5s ease-out;
+            display: block;
+            margin: 200px auto;
+            backdrop-filter: blur(2px);
+            -webkit-backdrop-filter: blur(2px);
+        }
+
+        .card-details {
+            color: black;
+            height: 100%;
+            margin: 50px 80px;
+            text-align: right;
+        }
+
+        .card-button {
+            transform: translate(-50%, 125%);
+            width: 60%;
+            border-radius: 1rem;
+            border: none;
+            background-color: #008bf8;
+            color: #fff;
+            font-size: 1rem;
+            padding: .5rem 1rem;
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            opacity: 0;
+            transition: 0.3s ease-out;
+        }
+
+        .text-body {
+            color: rgb(134, 134, 134);
+        }
+
+        /*Hover*/
+        .card:hover {
+            border-color: #008bf8;
+            box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+            backdrop-filter: blur(5.6px);
+            -webkit-backdrop-filter: blur(5.6px);
+            background-color: #008df829;
+        }
+
+        .card:hover .card-button {
+            transform: translate(-50%, 50%);
+            height: 50px;
+            opacity: 1;
+        }
+
+
+
+        h1 {
+            text-align: center;
+        }
+
+        .btnYzm {
+            border-color: #008df849;
+            border-radius: 10px;
+        }
+
+        .inputbox {
+            margin-top: 40px;
+            position: relative;
+            width: 300px;
+        }
+
+        .inputbox input {
+            position: relative;
+            width: 100%;
+            padding: 20px 50px 15px;
+            background: transparent;
+            outline: none;
+            box-shadow: none;
+            border: none;
+            color: #303031;
+            font-size: 1em;
+            letter-spacing: 0.05em;
+            transition: 0.5s;
+            z-index: 10;
+        }
+
+        .inputbox span {
+            position: absolute;
+            left: 0;
+            padding: 5px 5px 5px;
+            font-size: 1em;
+            color: #000000;
+            letter-spacing: 00.05em;
+            transition: 0.5s;
+            pointer-events: none;
+            font-size: larger;
+            font-family: "楷体";
+        }
+
+        .inputbox input:valid~span,
+        .inputbox input:focus~span {
+            color: #000000ae;
+            transform: translateX(-10px) translateY(-24px);
+            font-size: 0, 75em;
+        }
+
+        .inputbox i {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 2px;
+            background: #008df849;
+            border-radius: 10px;
+            transition: 0.5s;
+            pointer-events: none;
+            z-index: 9;
+        }
+
+        .inputbox input:valid~i,
+        .inputbox input:focus~i {
+            height: 44px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h1>登录</h1>
+        <form action="" method="post">
+            <div class="card-details">
+                <div class="inputbox">
+                    <input required="required" type="text" name="account">
+                    <span><b>Username</b></span>
+                    <i></i>
+                </div>
+
+                <div class="inputbox">
+                    <input required="required" type="password" name="password">
+                    <span>Password</span>
+                    <i></i>
+                </div>
+                <p></p>
+
+            </div>
+            <button type="submit" class="card-button">登录</button>
+
+        </form>
+    </div>
+
+</body>
+
+</html>

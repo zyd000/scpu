@@ -1,0 +1,508 @@
+.div_body {
+    width: 98%;
+    position: relative;
+    left: 1%;
+    padding: 20px 0 20px 0;
+}
+
+.div_title {
+    width: 98%;
+    position: relative;
+    left: 1%;
+    height: 100px !important;
+    flex-direction: row;
+    display: flex !important;
+    padding: 5px 0 5px 0;
+}
+
+.title_one {
+    height: 100px !important;
+    width: 338px !important;
+}
+
+.title_two {
+    width: 346px !important;
+    margin: 0 0 0 24%;
+}
+
+.title_three {
+    width: 436px !important;
+    margin: 0 0 0 10%;
+    padding-top: 20px;
+    float: rigth;
+}
+
+.div_dh {
+    margin: 50px 0 0 0;
+    width: 98%;
+    position: relative;
+    left: 1%;
+    padding: 10px 0 10px 0;
+    flex-direction: row;
+    display: flex !important;
+}
+
+/* .news {
+    width: 800px;
+    padding: 0 0 0 20px;
+    border-radius: 20px;
+    background-color: #ebebeb51;
+}
+
+.gg {
+    width: 800px;
+    margin: 0 0 0 30px;
+    padding: 0 0 0 20px;
+    border-radius: 20px;
+    background-color: #ebebeb51;
+} */
+
+.button {
+    width: 200px;
+    padding: 10px 0 10px 10px;
+    margin-left: 20px;
+    float: right;
+    border-radius: 20px 0 0 20px;
+    background-color: #ebebeb51;
+    align-items: center;
+}
+
+.buttom {
+    width: 40%;
+    margin: 0 0 0 3%;
+}
+
+.buttom_two {
+    width: 45%;
+    margin: 0 0 0 5%;
+}
+
+body {
+    background-color: #0074f927;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+li {
+    list-style: none;
+}
+
+.nav li:hover {
+    background-color: rgba(4, 49, 197, 0.432);
+    border-radius: 8px;
+}
+
+.nav {
+    width: 80%;
+    height: 57px;
+    margin: 0 auto;
+    background-color: rgba(77, 123, 162, 0.47);
+    text-align: center;
+    border-radius: 25px;
+    line-height: 57px;
+    margin-top: 20px;
+    transform: .2s;
+}
+
+.nav>ul>li {
+    position: relative;
+    display: inline-block;
+    z-index: 999
+}
+
+.nav a {
+    position: relative;
+    display: inline-block;
+    height: 48px;
+    padding: 0 16px;
+    font-size: 18px;
+    color: #111;
+}
+
+.nav a:hover {
+    color: #fff;
+}
+
+.nav-item {
+    display: none;
+    position: absolute;
+    width: 130px;
+    border-radius: 8px;
+    background-color: rgba(248, 248, 248, 0.155);
+    top: 111%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(4.5px);
+    -webkit-backdrop-filter: blur(4.5px);
+    border-radius: 10px;
+
+}
+
+.nav-item::before {
+    content: "";
+    position: absolute;
+    font-size: 25px;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 10px solid rgba(201, 192, 255, 0.909);
+    border-color: transparent transparent rgba(13, 62, 175, 0.559) transparent;
+}
+
+.nav-item::after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-color: transparent transparent rgba(13, 62, 175, 0.559) transparent;
+}
+
+.nav-item>ul>li {
+    height: 40px;
+    line-height: 40px;
+}
+
+.program1:hover .nav-item1,
+.program2:hover .nav-item2,
+.program3:hover .nav-item3,
+.program4:hover .nav-item4,
+.program5:hover .nav-item5,
+.program6:hover .nav-item6 {
+    display: block;
+}
+
+.news:hover {
+    box-shadow: 0px 20px 50px -11px rgba(0, 0, 0, 0.2);
+}
+
+.ulc {
+    font-family: "楷体";
+    font-size: 18px;
+    margin-top: 10px;
+    float: left;
+}
+
+.ulc li {
+    height: 40px;
+}
+
+
+.right {
+    margin-left: 580px;
+}
+
+.red {
+    color: red;
+}
+
+.sec {
+    width: 800px;
+    padding: 0 0 0 20px;
+    border-radius: 20px;
+    background-color: #17529610;
+    margin-left: 50px;
+}
+
+.sec:hover {
+    box-shadow: 0px 20px 50px -11px rgba(0, 0, 0, 0.2);
+}
+
+tr {
+    height: 30px;
+}
+
+.trc {
+    height: 30px;
+}
+
+table {
+    left: 50px;
+    font-size: 18px;
+    border-width: 0px;
+}
+
+td {
+    padding: 0 0 0 17px;
+    margin: 0 0 0 15px;
+    border-top: 10px;
+}
+
+.lin {
+    width: 150px;
+    height: 50px;
+    background-color: rgba(0, 102, 255, 0.073);
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 20px;
+    margin-top: 20px;
+    border-radius: 15px 0 0 15px;
+    float: right;
+    transform: .5s;
+}
+
+.lin:hover {
+    color: rgba(255, 255, 255, 1);
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    -webkit-box-shadow: 0 0 7px 0 rgba(15, 53, 79, 0.37);
+    box-shadow: 0 0 7px 0 rgba(15, 53, 79, 0.37);
+    transition: all .5s;
+}
+
+.sp {
+    background-color: rgba(127, 255, 212, 0.224);
+    border-radius: 5px;
+    color: rgba(7, 7, 7, 0.224);
+    font-size: 15px;
+    width: 50px;
+    height: 20px;
+}
+
+.center {
+    text-align: center;
+}
+
+hr {
+    border-color: #4f4fd586;
+}
+
+.td_padding {
+    padding-left: 50px;
+}
+
+.button_css {
+    text-align: right;
+    width: 200px;
+    height: 50px;
+    padding-top: 30px;
+    padding-right: 10px;
+    float: left;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+#dang {
+    background-color: rgba(255, 0, 0, 0.127);
+}
+
+#peixun {
+    background-color: #f1f10429;
+}
+
+#ts {
+    background-color: rgba(0, 0, 255, 0.136);
+}
+
+.parent {
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.511);
+}
+
+.child {
+    height: 80px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 10px;
+    font-size: smaller;
+    border-right: 3px solid rgba(159, 159, 159, 0.61);
+}
+
+#imgc {
+    float: left;
+}
+
+#main {
+    width: 1500px;
+    /*  height: 500px; */
+    overflow: hidden;
+    position: absolute;
+    left: 5%;
+    top: 17%;
+    border-radius: 20px;
+
+}
+
+#all-picture {
+    /* height: 500px; */
+    width: calc(1500px * 5);
+    /*如果加图片自行添加数目我这里5张图片所以宽度为5张图片横排的总尺寸，注意添加图片数目之后，动画内的参数也要相应的改变*/
+    animation: switch ease 15s infinite;
+    z-index: 9;
+}
+
+#all-picture img {
+    width: 1500px;
+    float: left;
+}
+
+#all-picture:hover {
+    animation-play-state: paused;
+}
+
+@keyframes switch {
+
+    /*每个图片切换有两个阶段：位移切换和静置。所以中间的效果可以任意定制，我这里在每个阶段切换时都有一定的时间来静置*/
+    0%,
+    10% {
+        margin-left: 0;
+    }
+
+    20%,
+    30% {
+        margin-left: -1500px;
+    }
+
+    40%,
+    50% {
+        margin-left: -3000px;
+    }
+
+    60%,
+    70% {
+        margin-left: -4500px;
+    }
+
+    80%,
+    90% {
+        margin-left: -6000px;
+    }
+
+    100% {
+        margin-left: 0px;
+    }
+
+}
+
+@keyframes picture1 {
+    0% {
+        margin-left: -3200px;
+    }
+
+    100% {
+        margin-left: 0px;
+    }
+}
+
+@keyframes picture2 {
+    0% {
+        margin-left: 0px;
+    }
+
+    100% {
+        margin-left: -800px
+    }
+}
+
+@keyframes picture3 {
+    0% {
+        margin-left: -800px;
+    }
+
+    100% {
+        margin-left: -1600px
+    }
+}
+
+@keyframes picture4 {
+    0% {
+        margin-left: -3200px;
+    }
+
+    100% {
+        margin-left: -2400px
+    }
+}
+
+@keyframes picture5 {
+    0% {
+        margin-left: 0px;
+    }
+
+    100% {
+        margin-left: -3200px
+    }
+}
+
+#a1:hover~#all-picture {
+    animation: picture1 ease 0.5s forwards;
+}
+
+#a2:hover~#all-picture {
+    animation: picture2 ease 0.5s forwards;
+}
+
+#a3:hover~#all-picture {
+    animation: picture3 ease 0.5s forwards;
+}
+
+#a4:hover~#all-picture {
+    animation: picture4 ease 0.5s forwards;
+}
+
+#a5:hover~#all-picture {
+    animation: picture5 ease 0.5s forwards;
+}
+
+.num1 {
+    width: 160px;
+    height: 20px;
+    position: absolute;
+    top: 440px;
+    left: 0px;
+}
+
+.num2 {
+    width: 160px;
+    height: 20px;
+    position: absolute;
+    top: 440px;
+    left: 160px;
+}
+
+.num3 {
+    width: 160px;
+    height: 20px;
+    position: absolute;
+    top: 440px;
+    left: 320px;
+}
+
+.num4 {
+    width: 160px;
+    height: 20px;
+    position: absolute;
+    top: 440px;
+    left: 480px;
+}
+
+.num5 {
+    width: 160px;
+    height: 20px;
+    position: absolute;
+    top: 440px;
+    left: 640px;
+}
+
+.num1,
+.num2,
+.num3,
+.num4,
+.num5 {
+    text-align: center;
+    line-height: 20px;
+}

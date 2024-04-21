@@ -1,0 +1,347 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgba(255, 255, 255, 0.715);
+    background-image: url("");
+    background-size: cover;
+    /* 让背景图基于容器大小伸缩 */
+    background-attachment: fixed;
+}
+
+.main {
+    width: 95%;
+    margin: 0 auto;
+    font-size: large;
+}
+
+.title {
+    height: 100px;
+    margin-top: 5px;
+    border: 1px solid black;
+}
+
+.daoahnglan {
+    margin-top: 20px;
+}
+
+.info {
+    border: 1px solid black;
+    margin: 20px auto;
+    padding-left: 10px;
+    max-width: 1450px;
+    padding-right: 10px;
+    font-family: "楷体";
+    font-size: 20px;
+}
+
+.end {
+    margin-top: 20px;
+    border: 1px solid black;
+    clear: both;
+}
+
+.nav li:hover {
+    background-color: rgba(4, 49, 197, 0.432);
+    border-radius: 8px;
+    list-style: none;
+}
+
+/* li {
+    list-style: none;
+} */
+
+.nav {
+    width: 80%;
+    height: 57px;
+    margin: 5px auto;
+    background-color: rgba(77, 123, 162, 0.47);
+    text-align: center;
+    border-radius: 25px;
+    line-height: 57px;
+    margin-top: 20px;
+    transform: .2s;
+}
+
+.nav>ul>li {
+    position: relative;
+    display: inline-block;
+    z-index: 999
+}
+
+.nav a {
+    position: relative;
+    display: inline-block;
+    height: 48px;
+    padding: 0 16px;
+    font-size: 18px;
+    color: #111;
+}
+
+.nav a:hover {
+    color: #fff;
+}
+
+.nav-item {
+    display: none;
+    position: absolute;
+    width: 130px;
+    border-radius: 8px;
+    background-color: rgba(248, 248, 248, 0.155);
+    top: 111%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(4.5px);
+    -webkit-backdrop-filter: blur(4.5px);
+    border-radius: 10px;
+
+}
+
+.nav-item::before {
+    content: "";
+    position: absolute;
+    font-size: 25px;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 10px solid rgba(201, 192, 255, 0.909);
+    border-color: transparent transparent rgba(13, 62, 175, 0.559) transparent;
+}
+
+.nav-item::after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-color: transparent transparent rgba(13, 62, 175, 0.559) transparent;
+}
+
+.nav-item>ul>li {
+    height: 40px;
+    line-height: 40px;
+}
+
+.program1:hover .nav-item1,
+.program2:hover .nav-item2,
+.program3:hover .nav-item3,
+.program4:hover .nav-item4,
+.program5:hover .nav-item5,
+.program6:hover .nav-item6 {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.title_one {
+    float: left;
+}
+
+.title_three {
+    float: right;
+}
+
+.img {
+    border: 1px solid #0c0101;
+    height: 600px;
+    width: 1600px;
+    margin: 20px auto;
+    align-items: center;
+}
+
+.img img {
+    height: 600px;
+    width: 1600px;
+}
+
+.info_left,
+.info_center {
+    max-width: 520px;
+    min-width: 400px;
+    border-radius: 20px;
+    background-color: #17529610;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0px auto;
+    float: left;
+    height: 550px;
+    margin-right: 10px;
+    border: 1px solid #000;
+}
+
+.info_right {
+    float: right;
+    max-width: 520px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    min-width: 300px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0px auto;
+}
+
+.info li {
+    list-style: none;
+    margin-bottom: 20px;
+
+}
+
+.info h2 {
+    text-align: center;
+}
+
+
+
+hr {
+    border-color: #4f4fd586;
+}
+
+
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 1s;
+}
+
+.fade-enter,
+.fade-leave-to {
+    opacity: 0;
+}
+
+.SwiperBox {
+    position: relative;
+    width: 1300px;
+    height: 800px;
+    box-sizing: border-box;
+    cursor: pointer;
+    overflow: hidden;
+    border: 1px solid #000000;
+}
+
+.imgBox {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    min-width: 1300px;
+    height: 800px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* 图片默认样式 */
+.imgBox img {
+    flex-shrink: 0;
+    width: 1300px;
+    height: 800px;
+}
+
+/* 两个按钮共有的样式,也可直接使用箭头图片替代 */
+.leftBtn,
+.rightBtn {
+    position: absolute;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(109, 109, 109, 0.445);
+    color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+    user-select: none;
+}
+
+.leftBtn {
+    left: 10px;
+}
+
+.rightBtn {
+    right: 10px;
+}
+
+/* 下方指示器盒子 */
+.instBox {
+    position: absolute;
+    transform: translateX(-50%);
+    bottom: 10px;
+    display: flex;
+}
+
+/* 小圆点 */
+.inst {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #ccc;
+    margin-right: 8px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.inst:last-child {
+    margin-right: 0px;
+}
+
+.instActv {
+    border: 1px solid #ff0000;
+    background: #ff0000;
+}
+
+#app {
+    width: 100%;
+    padding: 120px;
+    display: flex;
+    justify-content: center;
+}
+
+.loginimg {
+    border: 1px solid #000;
+    margin: 0px auto;
+    float: left;
+}
+
+.loginimg img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+
+
+.button {
+    margin: 10px auto;
+}
+
+.button_item {
+    background-color: rgba(23, 54, 140, 0.112);
+    margin-top: 10px;
+    border-radius: 10px;
+    line-height: 50px;
+    width: 200px;
+    overflow: hidden;
+    margin: 15px auto;
+    text-align: center;
+}
+
+.login_button{
+    float:right;
+    margin-top: 60px;
+    background-color: rgba(23, 54, 140, 0.112);
+    height: 50px;
+    text-align: center;
+    border-radius: 10px;
+    line-height: 50px;
+    width: 90px;
+    overflow: hidden;
+}

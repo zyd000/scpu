@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/user.css">
+    <script src="vue.js"></script>
+    <script>
+
+    </script>
+</head>
+
+<body>
+    <!-- 标题 -->
+    <div class="title">
+        <div class="title_one">
+            <img src="img/logo1.jpg" alt="" width="80%">
+        </div>
+        <div class="title_two">
+            <a href="https://vpn.scetc.edu.cn">校外VPN</a>&nbsp;&nbsp;
+            <a href="http://www.scetc.edu.cn/infpub">信息公开</a>
+        </div>
+        <div class="title_three">
+            <a href="https://www.sc.gov.cn/" target="_blank"><img src="img/zhengfulianjie.png" alt=""></a>
+        </div>
+    </div>
+    <!-- 导航栏 -->
+    <div class="daoahnglan">
+        <div class="nav">
+            <ul>
+                <li>
+                    <a href="#">首页</a>
+                </li>
+                <li class="program1">
+                    <div class="nav-item nav-item1">
+                        <ul>
+                            <li><a href="https://www.scetc.edu.cn/xxgk/xxjs.htm" title="学院介绍" target="_blank">学院介绍</a>
+                            </li>
+                            <li><a href="https://www.scetc.edu.cn/xxgk/xrld.htm" title="现任领导" target="_blank">现任领导</a>
+                            </li>
+                            <li><a href="https://www.scetc.edu.cn/xxgk/bxsx.htm" title="办学思想" target="_blank">办学思想</a>
+                            </li>
+                            <li><a href="http://www.scetc.edu.cn/infpub" title="信息公开" target="_blank">信息公开</a></li>
+                        </ul>
+                    </div>
+                    <a class="nav-a" href="#">学院概况</a>
+                </li>
+                <li class="program2">
+                    <div class="nav-item nav-item2">
+                        <ul>
+                            <li><a href="https://www.scetc.edu.cn/dqgc" target="_blank">电气工程系</a></li>
+                            <li><a href="https://www.scetc.edu.cn/dqgc" target="_blank">软件工程系</a></li>
+                            <li><a href="https://www.scetc.edu.cn/jxgc" target="_blank">机械工程系</a></li>
+                            <li><a href="https://www.scetc.edu.cn/jtgc" target="_blank">交通工程系</a></li>
+                            <li><a href="https://www.scetc.edu.cn/clgc" target="_blank">材料工程系</a></li>
+                            <li><a href="https://www.scetc.edu.cn/jdgc" target="_blank">机电工程系</a></li>
+                        </ul>
+                    </div>
+                    <a class="nav-a" href="#">系部设置</a>
+                </li>
+                <li>
+                    <a href="#">机构设置</a>
+                </li>
+                <li>
+                    <a class="nav-a" href="#">招生信息</a>
+                </li>
+                <li>
+                    <a class="nav-a" href="#">学科专业</a>
+                </li>
+
+                <li class="program3">
+                    <div class="nav-item nav-item3">
+                        <ul>
+                            <li>就业信息网</li>
+                            <li>创业信息网</li>
+                        </ul>
+                    </div>
+                    <a href="#">就业创业</a>
+                </li>
+
+                <li class="program4">
+                    <div class="nav-item nav-item4">
+                        <ul>
+                            <li>研究管理</li>
+                            <li>科技产业</li>
+                        </ul>
+                    </div>
+                    <a class="nav-a" href="#">科研与服务</a>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+    <div class="main">
+
+
+        <div class="img" id="img_fun">
+            <img :src="img_src[img_index]">
+        </div>
+
+        <div class="info">
+            <div class="info_left">
+                <div>
+                    <h2>新闻</h2><br>
+                    <hr>
+                    <div>
+                        <ul class="news">
+                            <li><span class="red">【媒体看工院】不同的视角，一样的精彩</span></li>
+                            <li><span class="red">【专题】中国共产党第二十次全国代表大会</span> </li>
+                            <li>国际妇女节，关爱女性健康——学生服务分工……</li>
+                            <li>四川工程职业技术学院干部生生热切关注全国……</li>
+                            <li>学校开展校领导、党委常委上“开学第一课”活动</li>
+                            <li>学校获评“2023年四川新三级优秀发展院校”</li>
+                            <li> 茶味人生，静品时光——万航模锻公司传统文化培</li>
+                            <li> 用行动诠释青春力量——我校学生参与抗震救灾</li>
+                            <li> 学校开展食品安全专项检查 筑牢食品安全防线</li>
+                            <li>学校干部师生热切关注全国“两会”</li>
+                            <li>查看更多&gt;&gt;&gt;</li>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="info_center">
+                <h2>公告</h2><br>
+                <hr>
+                <div>
+                    <ul class="ad">
+                        <li><span class="red">【媒体看工院】不同的视角，一样的精彩</span></li>
+                        <li><span class="red">【专题】中国共产党第二十次全国代表大会</span> </li>
+                        <li>国际妇女节，关爱女性健康——学生服务分工……</li>
+                        <li>四川工程职业技术学院干部生生热切关注全国……</li>
+                        <li>学校开展校领导、党委常委上“开学第一课”活动</li>
+                        <li>学校获评“2023年四川新三级优秀发展院校”</li>
+                        <li> 茶味人生，静品时光——万航模锻公司传统文化培训</li>
+                        <li> 用行动诠释青春力量——我校学生参与抗震救灾</li>
+                        <li> 学校开展食品安全专项检查 筑牢食品安全防线</li>
+                        <li>学校干部师生热切关注全国“两会”</li>
+                        <li>查看更多&gt;&gt;&gt;</li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="info_right">
+                <div class="loginimg">
+                    <img src="img/login/loginbackground.jpg" alt="头像图片" srcset="">
+                </div>
+                <div class="login_button">
+                    <a href="html/lgoin.html" target="_self" id="login">登录</a>
+                </div>
+                <div style="clear:both">
+                    <hr>
+                    <ul style="margin-top: 10px;">
+                        <li>学生：张三</li>
+                        <li>学号: 123456</li>
+                    </ul>
+
+                    <hr>
+                </div>
+                <div class="button">
+                    <div class="button_item">
+                        <h3><a href="https://jiaowu.scetc.edu.cn">教务信息</a></h3>
+                    </div>
+                    <div class="button_item">
+                        <h3><a href="https://jiaowu.scetc.edu.cn">网办大厅</a></h3>
+                    </div>
+                    <div class="button_item">
+                        <h3><a href="https://jiaowu.scetc.edu.cn">智慧学工</a></h3>
+                    </div>
+                    <div class="button_item">
+                        <h3><a href="https://jiaowu.scetc.edu.cn">人才招聘</a></h3>
+                    </div>
+
+                </div>
+
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+        <div class="end">
+            ff
+        </div>
+
+        <script>
+            const img_fun = new Vue({
+                el: '#img_fun',
+                data: {
+                    img_index: 0,
+                    img_src: ['img/qx.png', 'img/igy.png', 'img/sydw.png']
+                }
+            })
+        </script>
+</body>
+
+</html>
