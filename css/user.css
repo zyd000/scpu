@@ -151,7 +151,8 @@ a {
 .img {
     border: 1px solid #0c0101;
     height: 600px;
-    width: 1600px;
+    max-width:1600px;
+    min-width:1000px;
     margin: 20px auto;
     align-items: center;
 }
